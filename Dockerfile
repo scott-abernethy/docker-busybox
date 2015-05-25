@@ -1,7 +1,7 @@
 # Dockerfile for scottabernethy/busybox
 FROM progrium/busybox:latest
 
-RUN opkg-install ca-certificates curl unzip vim
+RUN opkg-install ca-certificates curl
 
 RUN \
 	curl -o /usr/bin/gosu -sSL "https://github.com/tianon/gosu/releases/download/1.4/gosu-amd64" && \
