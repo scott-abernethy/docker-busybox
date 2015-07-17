@@ -1,6 +1,8 @@
 # Dockerfile for scottabernethy/busybox
 FROM progrium/busybox:latest
 
+MAINTAINER Scott Abernethy <scott@pixietwin.com>
+
 RUN opkg-install ca-certificates curl
 
 # RUN \
